@@ -1,11 +1,10 @@
 /// Login & registration are defined here.......
 
-
 void admin_login()
 {
     system("CLS");
-    char User_id[20] ={"team 3wp"};///This is the program User_Id....................
-    char password[15]={"123456"};///This Is The Password..............................
+    char User_id[20] ={"team 3wp"};///This is the program User_Id..
+    char password[15]={"1234"};///This Is The Password..
     SetColor(3);
     char d[25]="Password Protected";
     char ch,pass[15],uid[20];
@@ -13,17 +12,17 @@ void admin_login()
     gotoxy(55,10);
     for(j=0;j<20;j++)
     {
-        Sleep(50);
+        Sleep(10);
         printf("*");
     }
     for(j=0;j<18;j++)
     {
-        Sleep(50);
+        Sleep(10);
         printf("%c",d[j]);
     }
     for(j=0;j<20;j++)
     {
-        Sleep(50);
+        Sleep(10);
         printf("*");
     }
     again1:
@@ -45,7 +44,7 @@ void admin_login()
     while(ch!=13)
     {
         ch=_getch();
-        if(ch!=13 && ch!=8){///in this loop we put a * in case we enter a character in pass string..........
+        if(ch!=13 && ch!=8){///in this loop we put a * in case we enter a character in pass string
             putch('*');
             pass[i] = ch;
             i++;
@@ -85,7 +84,6 @@ void admin_login()
         clearLine(14);
         goto again1;
     }
-
 }
 
 char stp1[15];
@@ -101,7 +99,7 @@ void user_login()
     gotoxy(65,13);printf("\xdb\xb2 Enter Account number: ");gets(sti1);fflush(stdin);
         while(fread(&use,sizeof(use),1,fp) == 1){
                 isFound=0;
-        if(strcmp(sti1,use.acc) == 0){///We check here is that Id is already exist or not....
+        if(strcmp(sti1,use.acc) == 0){///We check here is that Id is already exist or not..
             isFound = 1;
             break;
         }
@@ -189,7 +187,7 @@ void user_regist()
     SetColor(45);
     gotoxy(60,13);printf("\xdb\xb2 Enter the account number : ");memset(&sti1[0],0,sizeof(sti1));fflush(stdin);gets(sti1);fflush(stdin);
         while(fread(&us,sizeof(us),1,fp) == 1){
-        if(strcmp(sti1,us.acn) == 0){///We check here is that Id is already exist or not....
+        if(strcmp(sti1,us.acn) == 0){///We check here is that Id is already exist or not..
             isFound = 1;
             break;
         }
@@ -256,7 +254,7 @@ void user_regist()
             }
         }
         else {
-                SetColor(45);
+            SetColor(45);
             strcpy(use.acc,sti1);
             char p2[30];char p1[30];
             lol:

@@ -1,6 +1,5 @@
 /// We will define all the option here....
 
-
 void main_option()///done
 {
     system("CLS");
@@ -30,7 +29,7 @@ void main_option()///done
 
 }
 
-void user_login_option()///done
+void user_login_option()
 {
     system("CLS");
     creat1(76,"Login Option");

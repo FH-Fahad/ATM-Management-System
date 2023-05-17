@@ -1,4 +1,4 @@
-/// Admin accessible functions are defined here....
+/// Admin accessible functions are defined here..
 
 void creat_acc()
 {
@@ -28,7 +28,7 @@ void creat_acc()
             gotoxy(58,22);printf("\xdb\xb2 Successfully account created.....");
         }
         else{
-                SetColor(4);
+            SetColor(4);
             gotoxy(58,19);printf("\xdb\xb2 Account already exist...");
         }
         SetColor(1);
@@ -106,7 +106,6 @@ void delete_acc()
         default:
             goto lol;
     }
-
 }
 
 void search_acn()
@@ -218,7 +217,6 @@ void search_name()
                 break;
         }
     }
-
 }
 
 void acc_list()
@@ -263,5 +261,4 @@ void acc_list()
                 break;
         }
     }
-
 }
